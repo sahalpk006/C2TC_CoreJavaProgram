@@ -13,9 +13,9 @@ public class ProductDemo {
 		p1.name="mug";
 		p1.price=25;
 		
-		System.out.println("Student Id: "+p1.id);
-		System.out.println("Student name: "+p1.name);
-		System.out.println("Student city: "+p1.price);
+		System.out.println("Product Id: "+p1.id);
+		System.out.println("Product name: "+p1.name);
+		System.out.println("Product price: "+p1.price);
 		
 		System.out.println("-----------------");
 		
@@ -24,9 +24,9 @@ public class ProductDemo {
 		p2.name="GLass";
 		p2.price=250;
 		
-		System.out.println("Student Id: "+p2.id);
-		System.out.println("Student name: "+p2.name);
-		System.out.println("Student city: "+p2.price);
+		System.out.println("Product Id: "+p2.id);
+		System.out.println("Product name: "+p2.name);
+		System.out.println("Product price: "+p2.price);
 
 	}
 
