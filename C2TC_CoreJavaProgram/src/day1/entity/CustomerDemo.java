@@ -25,7 +25,7 @@ public class CustomerDemo {
 		c2.setCname("Manu");
 		c2.setCity("VPM");
 		
-		System.out.println(c2);
+		System.out.println(c2);        
 		
 
 	}
