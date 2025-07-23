@@ -13,12 +13,28 @@ public class Customer {
 		this.city="pdy";
 	}
 	
-	public Customer(int id,String name,String city)
+	public Customer(int id,String name,String city)  //parameterized constructor
 	{
+		
+		//this()  calling default constructor
+		this("rakesh","chennai");  // # only can call one constructor 1.write in first  2.calling the second parameter in first parameter
 		this.id=id;
 		this.name=name;
 		this.city=city;
 	}
+	
+	public Customer(String name,String city)  // two paramterized constructor
+	{
+		
+		this.name=name;
+		this.city=city;
+		
+		System.out.println("2nd Parameterized called");
+	}
+	
+	
+	
+	
 	
 	
 	

@@ -1,10 +1,10 @@
-package day2.constructor;
+package daythree.constructor;
 
-public class CustomerDemo {
+import day2.constructor.Customer;
+
+public class customerDemo {
 
 	public static void main(String[] args) {
-		
-		
 		Customer c1=new Customer();
 		System.out.println(c1);
 		
