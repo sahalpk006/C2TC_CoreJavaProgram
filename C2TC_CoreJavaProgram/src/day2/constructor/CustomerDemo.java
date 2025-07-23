@@ -8,7 +8,7 @@ public class CustomerDemo {
 		System.out.println(c1);
 		
 		
-		Customer c2=new Customer(102);
+		Customer c2=new Customer(102,"mug","vpm");
 		System.out.println(c2);
 
 	}

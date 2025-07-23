@@ -20,9 +20,7 @@ public class Customer {
 		this.city=city;
 	}
 	
-	public int getid(int id) {
-		this.id=id;
-	}
+	
 	
 	
 	
