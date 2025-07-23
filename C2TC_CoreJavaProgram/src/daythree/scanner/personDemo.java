@@ -23,6 +23,7 @@ public class personDemo {
 		p.setAge(age);
 		p.setGender(gender);
 		p.setIncome(income);
+		
 
 		
 		
