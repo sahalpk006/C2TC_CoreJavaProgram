@@ -1,14 +1,44 @@
 package assignment4;
 
-public class Executor{
+import java.util.Scanner;
+
+public class Executor {
     public static void main(String[] args) {
-        AirIndia ai = new AirIndia(3, 1500.0);
-        ai.display();
+        Scanner sc = new Scanner(System.in);
 
-        Indigo indigo = new Indigo(2, 2000.0);
-        indigo.display();
+        System.out.println("Enter your choice:");
+        System.out.println("1 for AirIndia");
+        System.out.println("2 for KingFisher");
+        System.out.println("3 for Indigo");
+        int choice = Integer.parseInt(sc.nextLine());
 
-        KingFisher kf = new KingFisher(4, 1200.0);
-        kf.display();
+        
+        System.out.println("Enter hours of travel:");
+        int hours = Integer.parseInt(sc.nextLine());
+
+        
+        System.out.println("Enter cost per hour:");
+        double costPerHour = Double.parseDouble(sc.nextLine());
+        Airfare airfare;
+
+        switch (choice) {
+            case 1:
+                airfare = new AirIndia(hours, costPerHour);
+                break;
+            case 2:
+                airfare = new KingFisher(hours, costPerHour);
+                break;
+            case 3:
+                airfare = new Indigo(hours, costPerHour);
+                break;
+            default:
+                System.out.println("Invalid choice");
+                sc.close();
+                return;
+        }
+
+        airfare.display();
+
+        sc.close();
     }
 }
