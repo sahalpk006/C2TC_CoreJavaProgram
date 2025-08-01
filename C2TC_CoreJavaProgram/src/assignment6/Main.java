@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Creating a BankAccount instance using parameterized constructor
+        
         BankAccount account = new BankAccount(1001, 5000.0);
 
         Scanner sc = new Scanner(System.in);
         try {
             account.displayBalance();
 
-            // Demonstrate deposit with exception handling
             System.out.print("Enter amount to deposit: ");
             double depositAmount = sc.nextDouble();
             try {
